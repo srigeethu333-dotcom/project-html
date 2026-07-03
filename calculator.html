@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+s<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        body{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            margin-top:80px;
+            border-radius:50px;
+        }
+        .calculator{
+            width:400px;
+            height:400px;
+            background-color:black;
+            padding:20px;
+            border-radius:15px;
+        }
+        .display{
+            width:400px;
+            height:80px;
+            background-color:whitesmoke;
+            margin-bottom:15px;
+            border-radius:10px;
+            text-align:right;
+            line-height:60px;
+            font-size:28px;
+            padding-right:20px;
+            padding-top:15px;
+            box-sizing:border-box;
+         }
+         .button{
+            display:grid;
+            grid-template-columns:repeat(4,1fr);
+            gap:10px;
+        
+         }
+          button{
+            height:50px;
+            font-size:20px;
+            border:none;
+            border-radius:10px;
+            cursor: pointer;
+            background-color:gainsboro;
+         }
+         .operator{
+            background-color:orange;
+            color:white;
+         }
+         .equal{
+            background:green;
+            color:white;
+         }
+         .All-clear{
+            background:red;
+            color:white;
+         }
+        </style>
+</head>
+<body>
+    <div class="main"></div>
+    <div class="calculator">
+    <div class="display">0</div>
+    <div class="button">
+        <button class="All-clear">AC</button>
+        <button>%</button>
+        <button>DEL</button>
+        <button class="operator">/</button>
+
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="operator">*</button>
+         
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="operator">-</button>
+
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="operator">+</button>
+
+        <button>00</button>
+        <button>0</button>
+        <button>.</button>
+        <button class="equal">=</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
